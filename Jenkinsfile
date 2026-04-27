@@ -2,9 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('crate a web dir') {
-            input {
-                message 'enter the data'
+        stage('crate a web dir') 
                 parameters {
                     string defaultValue: 'sergui', description: 'author of web application deploy', name: 'Author'
                     string defaultValue: 'Development', description: 'Environment to deploy', name: 'Environment'
